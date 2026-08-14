@@ -3,90 +3,206 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
   <title>Elite VA Consulting | Legal Virtual Assistants</title>
 
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
   <style>
-    html,
-    body {
+    html, body {
       margin: 0;
       padding: 0;
-      width: 100%;
-      min-height: 100%;
       background: #ffffff;
     }
 
     body {
+      font-family: 'Montserrat', Arial, sans-serif;
+    }
+
+    .email-container {
+      width: 100%;
+      max-width: 800px;
+      margin: 0 auto;
+      text-align: center;
+    }
+
+    .main-flyer {
+      width: 100%;
+      max-width: 800px;
+      height: auto;
+      display: block;
+      margin: 0 auto;
+    }
+
+    .va-card {
+      width: 90%;
+      max-width: 720px;
+      display: block;
+      margin: 10px auto;
+      text-decoration: none;
+    }
+
+    .va-card img {
+      width: 100%;
+      height: auto;
+      display: block;
+      border: 0;
+    }
+
+    .cta-title {
+      margin: 28px 15px 4px;
+      color: #090f46;
+      font-family: 'Montserrat', Arial, sans-serif;
+      font-size: 25px;
+      line-height: 1.2;
+      font-weight: 700;
+    }
+
+    .cta-subtitle {
+      margin: 0 15px 18px;
+      color: #a46f0b;
+      font-family: 'Montserrat', Arial, sans-serif;
+      font-size: 16px;
+      line-height: 1.3;
+      font-weight: 600;
+    }
+
+    .buttons {
       display: flex;
       justify-content: center;
-      align-items: flex-start;
+      align-items: center;
+      gap: 14px;
+      margin: 0 auto 30px;
     }
 
-    .email-preview {
-      width: 143px;
-      margin: 30px auto;
+    .action-button {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      gap: 8px;
+      min-width: 115px;
+      padding: 12px 18px;
+      border-radius: 5px;
+      background: #090f46;
+      color: #ffffff;
+      text-decoration: none;
+      font-family: 'Montserrat', Arial, sans-serif;
+      font-size: 13px;
+      line-height: 1;
+      font-weight: 700;
+      letter-spacing: 0.3px;
     }
 
-    .flyer {
-      display: block;
-      width: 143px;
-      height: 544px;
-      border: 0;
-      outline: none;
+    .icon {
+      font-size: 17px;
+      line-height: 1;
+    }
+
+    @media only screen and (max-width: 600px) {
+      .cta-title {
+        font-size: 21px;
+      }
+
+      .buttons {
+        gap: 10px;
+      }
+
+      .action-button {
+        min-width: 105px;
+        padding: 11px 14px;
+      }
     }
   </style>
 </head>
 
 <body>
 
-  <div class="email-preview">
+<div class="email-container">
 
-    <!-- FLYER -->
+  <!-- MAIN FLYER -->
+  <img
+    class="main-flyer"
+    src="https://raw.githubusercontent.com/comunicaciones-prog/videos/main/part%201%20255.png"
+    alt="Bilingual Virtual Assistants for Law Firms - Meet Our VAs"
+  >
+
+  <!-- ARALY -->
+  <a
+    class="va-card"
+    href="https://youtu.be/ztvuQVchOK0"
+    target="_blank"
+    rel="noopener noreferrer"
+  >
     <img
-      class="flyer"
-      src="https://raw.githubusercontent.com/comunicaciones-prog/videos/main/part%201%20255.png"
-      width="143"
-      height="544"
-      alt="Bilingual Virtual Assistants for Law Firms"
-      usemap="#legal-va-map"
+      src="https://raw.githubusercontent.com/comunicaciones-prog/videos/main/araly%20001.png"
+      alt="Araly - Legal Virtual Assistant"
     >
+  </a>
 
-    <!-- CLICKABLE PHOTOS -->
-    <map name="legal-va-map">
+  <!-- LAURA -->
+  <a
+    class="va-card"
+    href="https://youtu.be/TJqAyAgVrTk"
+    target="_blank"
+    rel="noopener noreferrer"
+  >
+    <img
+      src="https://raw.githubusercontent.com/comunicaciones-prog/videos/main/laura%20002.png"
+      alt="Laura - Legal Virtual Assistant"
+    >
+  </a>
 
-      <!-- DANIELA -->
-      <area
-        shape="rect"
-        coords="18,398,53,442"
-        href="https://youtu.be/3aw69RN2YII"
-        target="_blank"
-        alt="Meet Daniela - Legal Virtual Assistant"
-        title="Meet Daniela - Legal Virtual Assistant"
-      >
+  <!-- DANIELA -->
+  <a
+    class="va-card"
+    href="https://youtu.be/3aw69RN2YII"
+    target="_blank"
+    rel="noopener noreferrer"
+  >
+    <img
+      src="https://raw.githubusercontent.com/comunicaciones-prog/videos/main/daniela%20002.png"
+      alt="Daniela - Legal Virtual Assistant"
+    >
+  </a>
 
-      <!-- ARALY -->
-      <area
-        shape="rect"
-        coords="18,444,53,489"
-        href="https://youtu.be/ztvuQVchOK0"
-        target="_blank"
-        alt="Meet Araly - Legal Virtual Assistant"
-        title="Meet Araly - Legal Virtual Assistant"
-      >
+  <!-- CTA -->
+  <div class="cta-title">
+    Interview a VA this week
+  </div>
 
-      <!-- LAURA -->
-      <area
-        shape="rect"
-        coords="18,491,53,538"
-        href="https://youtu.be/TJqAyAgVrTk"
-        target="_blank"
-        alt="Meet Laura - Legal Virtual Assistant"
-        title="Meet Laura - Legal Virtual Assistant"
-      >
+  <div class="cta-subtitle">
+    no commitment.
+  </div>
 
-    </map>
+  <!-- WEB + MEET -->
+  <div class="buttons">
+
+    <!-- WEB -->
+    <a
+      class="action-button"
+      href="https://www.elitevaconsulting.com/"
+      target="_blank"
+      rel="noopener noreferrer"
+    >
+      <span class="icon">🌐</span>
+      <span>WEB</span>
+    </a>
+
+    <!-- MEET -->
+    <a
+      class="action-button"
+      href="https://elitevaeasybookings.lovable.app/"
+      target="_blank"
+      rel="noopener noreferrer"
+    >
+      <span class="icon">▣</span>
+      <span>MEET</span>
+    </a>
 
   </div>
+
+</div>
 
 </body>
 </html>
